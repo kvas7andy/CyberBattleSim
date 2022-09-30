@@ -14,4 +14,4 @@ dirmngr
 apt-transport-https
 lsb-release
 ca-certificates
-python-distutils-extra
+python3-distutils-extra

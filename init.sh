@@ -63,6 +63,7 @@ else
     if [ "${ADD_PYTHON39_APTREPO}" == "1" ]; then
         echo 'Adding APT repo ppa:deadsnakes/ppa'
         $SUDO apt install software-properties-common -y
+        $SUDO update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
         $SUDO apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/3bf863cc.pub
         $SUDO add-apt-repository ppa:deadsnakes/ppa -y
     fi
